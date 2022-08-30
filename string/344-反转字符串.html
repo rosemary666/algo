@@ -1,0 +1,875 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>344. 反转字符串 · ALGO</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="rosemary666">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="541-反转字符串II.html" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/rosemary666/algo" target="_blank" class="custom-link">ALGO</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    数组
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../array/704-二分查找.html">
+            
+                <a href="../array/704-二分查找.html">
+            
+                    
+                    704. 二分查找
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../array/27-移除元素.html">
+            
+                <a href="../array/27-移除元素.html">
+            
+                    
+                    27. 移除元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../array/977-有序数组的平方.html">
+            
+                <a href="../array/977-有序数组的平方.html">
+            
+                    
+                    977. 有序数组的平方
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../array/209-长度最小的子数组.html">
+            
+                <a href="../array/209-长度最小的子数组.html">
+            
+                    
+                    209. 长度最小的子数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../array/59-螺旋矩阵.html">
+            
+                <a href="../array/59-螺旋矩阵.html">
+            
+                    
+                    59. 螺旋矩阵 II
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    链表
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../linked-list/203-移除链表元素.html">
+            
+                <a href="../linked-list/203-移除链表元素.html">
+            
+                    
+                    203. 移除链表元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../linked-list/707-设计链表.html">
+            
+                <a href="../linked-list/707-设计链表.html">
+            
+                    
+                    707. 设计链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../linked-list/206-反转链表.html">
+            
+                <a href="../linked-list/206-反转链表.html">
+            
+                    
+                    206. 反转链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../linked-list/24-两两交换链表中的节点.html">
+            
+                <a href="../linked-list/24-两两交换链表中的节点.html">
+            
+                    
+                    24. 两两交换链表中的节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../linked-list/19-删除链表的倒数第%20N%20个结点.md">
+            
+                <span>
+            
+                    
+                    19. 删除链表的倒数第 N 个结点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../linked-list/面试题-0207-链表相交.html">
+            
+                <a href="../linked-list/面试题-0207-链表相交.html">
+            
+                    
+                    面试题 02.07. 链表相交
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../linked-list/142-环形链表II.html">
+            
+                <a href="../linked-list/142-环形链表II.html">
+            
+                    
+                    142. 环形链表 II
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    哈希表
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../hash/242-有效的字母异位词.html">
+            
+                <a href="../hash/242-有效的字母异位词.html">
+            
+                    
+                    242. 有效的字母异位词
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../hash/349-两个数组的交集.html">
+            
+                <a href="../hash/349-两个数组的交集.html">
+            
+                    
+                    349. 两个数组的交集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../hash/202-快乐数.html">
+            
+                <a href="../hash/202-快乐数.html">
+            
+                    
+                    202. 快乐数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../hash/1-两数之和.html">
+            
+                <a href="../hash/1-两数之和.html">
+            
+                    
+                    1. 两数之和
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../hash/454-四数相加II.html">
+            
+                <a href="../hash/454-四数相加II.html">
+            
+                    
+                    454. 四数相加 II
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../hash/383-赎金信.html">
+            
+                <a href="../hash/383-赎金信.html">
+            
+                    
+                    383. 赎金信
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../hash/15-三数之和.html">
+            
+                <a href="../hash/15-三数之和.html">
+            
+                    
+                    15. 三数之和
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../hash/18-四数之和.html">
+            
+                <a href="../hash/18-四数之和.html">
+            
+                    
+                    18. 四数之和
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    字符串
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.5.1" data-path="344-反转字符串.html">
+            
+                <a href="344-反转字符串.html">
+            
+                    
+                    344. 反转字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="541-反转字符串II.html">
+            
+                <a href="541-反转字符串II.html">
+            
+                    
+                    541. 反转字符串 II
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="541-反转字符串II.html">
+            
+                <a href="541-反转字符串II.html">
+            
+                    
+                    剑指 Offer 05. 替换空格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="151-颠倒字符串中的单词.html">
+            
+                <a href="151-颠倒字符串中的单词.html">
+            
+                    
+                    151. 颠倒字符串中的单词
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="58-II左旋转字符串.html">
+            
+                <a href="58-II左旋转字符串.html">
+            
+                    
+                    58 - II. 左旋转字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="28-实现strStr(">
+            
+                <span>
+            
+                    
+                    28. 实现 strStr()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="459-重复的子字符串.html">
+            
+                <a href="459-重复的子字符串.html">
+            
+                    
+                    459. 重复的子字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    栈和队列
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../stacks-queues/232-用栈实现队列.html">
+            
+                <a href="../stacks-queues/232-用栈实现队列.html">
+            
+                    
+                    232. 用栈实现队列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../stacks-queues/225-用队列实现栈.html">
+            
+                <a href="../stacks-queues/225-用队列实现栈.html">
+            
+                    
+                    225. 用队列实现栈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../stacks-queues/20-有效的括号.html">
+            
+                <a href="../stacks-queues/20-有效的括号.html">
+            
+                    
+                    20. 有效的括号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../stacks-queues/1047-删除字符串中的所有相邻重复项.html">
+            
+                <a href="../stacks-queues/1047-删除字符串中的所有相邻重复项.html">
+            
+                    
+                    1047. 删除字符串中的所有相邻重复项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../stacks-queues/150-逆波兰表达式求值.html">
+            
+                <a href="../stacks-queues/150-逆波兰表达式求值.html">
+            
+                    
+                    150. 逆波兰表达式求值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../stacks-queues/239-滑动窗口最大值.html">
+            
+                <a href="../stacks-queues/239-滑动窗口最大值.html">
+            
+                    
+                    239. 滑动窗口最大值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../stacks-queues/347-前K个高频元素.html">
+            
+                <a href="../stacks-queues/347-前K个高频元素.html">
+            
+                    
+                    347. 前 K 个高频元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    二叉树
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../tree/144-二叉树的前序遍历.html">
+            
+                <a href="../tree/144-二叉树的前序遍历.html">
+            
+                    
+                    144. 二叉树的前序遍历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../tree/145-二叉树的后序遍历.html">
+            
+                <a href="../tree/145-二叉树的后序遍历.html">
+            
+                    
+                    145. 二叉树的后序遍历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../tree/94-二叉树的中序遍历.html">
+            
+                <a href="../tree/94-二叉树的中序遍历.html">
+            
+                    
+                    94. 二叉树的中序遍历
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >344. 反转字符串</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="344-&#x53CD;&#x8F6C;&#x5B57;&#x7B26;&#x4E32;">344. &#x53CD;&#x8F6C;&#x5B57;&#x7B26;&#x4E32;</h1>
+<p><a href="https://leetcode.cn/problems/reverse-string/" target="_blank">leecode&#x539F;&#x9898;</a></p>
+<h2 id="&#x9898;&#x76EE;">&#x9898;&#x76EE;</h2>
+<p>&#x7F16;&#x5199;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x5176;&#x4F5C;&#x7528;&#x662F;&#x5C06;&#x8F93;&#x5165;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x53CD;&#x8F6C;&#x8FC7;&#x6765;&#x3002;&#x8F93;&#x5165;&#x5B57;&#x7B26;&#x4E32;&#x4EE5;&#x5B57;&#x7B26;&#x6570;&#x7EC4; <code>s</code> &#x7684;&#x5F62;&#x5F0F;&#x7ED9;&#x51FA;&#x3002;</p>
+<p><strong>&#x4E0D;&#x8981;&#x7ED9;&#x53E6;&#x5916;&#x7684;&#x6570;&#x7EC4;&#x5206;&#x914D;&#x989D;&#x5916;&#x7684;&#x7A7A;&#x95F4;&#xFF0C;&#x4F60;&#x5FC5;&#x987B;&#x539F;&#x5730;&#x4FEE;&#x6539;&#x8F93;&#x5165;&#x6570;&#x7EC4;&#x3001;&#x4F7F;&#x7528; O(1) &#x7684;&#x989D;&#x5916;&#x7A7A;&#x95F4;&#x89E3;&#x51B3;&#x8FD9;&#x4E00;&#x95EE;&#x9898;&#x3002;</strong></p>
+<h2 id="&#x793A;&#x4F8B;">&#x793A;&#x4F8B;</h2>
+<h3 id="&#x793A;&#x4F8B;-1">&#x793A;&#x4F8B; 1:</h3>
+<pre><code class="lang-text">&#x8F93;&#x5165;&#xFF1A;s = [&quot;h&quot;,&quot;e&quot;,&quot;l&quot;,&quot;l&quot;,&quot;o&quot;]
+&#x8F93;&#x51FA;&#xFF1A;[&quot;o&quot;,&quot;l&quot;,&quot;l&quot;,&quot;e&quot;,&quot;h&quot;]
+</code></pre>
+<h3 id="&#x793A;&#x4F8B;-2">&#x793A;&#x4F8B; 2:</h3>
+<pre><code class="lang-text">&#x8F93;&#x5165;&#xFF1A;s = [&quot;H&quot;,&quot;a&quot;,&quot;n&quot;,&quot;n&quot;,&quot;a&quot;,&quot;h&quot;]
+&#x8F93;&#x51FA;&#xFF1A;[&quot;h&quot;,&quot;a&quot;,&quot;n&quot;,&quot;n&quot;,&quot;a&quot;,&quot;H&quot;]
+</code></pre>
+<h2 id="&#x63D0;&#x793A;&#xFF1A;">&#x63D0;&#x793A;&#xFF1A;</h2>
+<ul>
+<li><code>1 &lt;= s.length &lt;= 105</code></li>
+<li><code>s[i]</code> &#x90FD;&#x662F; <code>ASCII</code> &#x7801;&#x8868;&#x4E2D;&#x7684;&#x53EF;&#x6253;&#x5370;&#x5B57;&#x7B26;</li>
+</ul>
+<h2 id="&#x89E3;&#x9898;&#x601D;&#x8DEF;">&#x89E3;&#x9898;&#x601D;&#x8DEF;</h2>
+<h3 id="&#x601D;&#x8DEF;">&#x601D;&#x8DEF;</h3>
+<p>&#x8FD9;&#x4E2A;&#x9898;&#x8981;&#x5B9E;&#x73B0;<code>O(1)</code>&#x7684;&#x7B97;&#x6CD5;&#x7A7A;&#x95F4;&#x5EA6;&#xFF0C;&#x91CD;&#x70B9;&#x5C31;&#x662F;&#x53EF;&#x4EE5;&#x7ED3;&#x5408;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x5728;&#x94FE;&#x8868;&#x90E8;&#x5206;&#x4F7F;&#x7528;&#x8FC7;&#x7684;&#x53CC;&#x6307;&#x9488;&#x65B9;&#x6CD5;:      </p>
+<ol>
+<li>&#x521D;&#x59CB;&#x5B9A;&#x4E49;<code>i:=0;j=len(s)-1</code></li>
+<li>&#x5224;&#x65AD;&#x662F;&#x5426;<code>i&lt; j</code>, &#x662F;&#x7684;&#x8BDD;&#xFF0C;&#x5219;&#x6267;&#x884C;&#x6B65;&#x9AA4;3&#xFF0C;4&#xFF0C; &#x5426;&#x7684;&#x8BDD;&#x7EC8;&#x6B62;&#x3002;</li>
+<li>&#x4EA4;&#x6362;<code>i</code>, <code>j</code>&#x5BF9;&#x5E94;&#x7684;&#x6570;&#x7EC4;&#x7684;&#x503C;</li>
+<li><code>i++</code>, <code>j--</code></li>
+<li>&#x91CD;&#x590D;2, 3, 4&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B; </li>
+</ol>
+<h2 id="&#x5B9E;&#x73B0;">&#x5B9E;&#x73B0;</h2>
+<p><a href="code/344-reverse-string/main.go">&#x6E90;&#x7801;</a></p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> reverseString(s []<span class="hljs-keyword">byte</span>) {
+    i := <span class="hljs-number">0</span>
+    j := <span class="hljs-built_in">len</span>(s) - <span class="hljs-number">1</span>
+    <span class="hljs-keyword">for</span> i &lt; j {
+        s[i], s[j] = s[j], s[i]
+        i++
+        j--
+    }
+    <span class="hljs-keyword">return</span>
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: 字符串">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="541-反转字符串II.html" class="navigation navigation-next " aria-label="Next page: 541. 反转字符串 II">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"344. 反转字符串","level":"1.5.1","depth":2,"next":{"title":"541. 反转字符串 II","level":"1.5.2","depth":2,"path":"string/541-反转字符串II.md","ref":"string/541-反转字符串II.md","articles":[]},"previous":{"title":"字符串","level":"1.5","depth":1,"path":"README.md","ref":"README.md","articles":[{"title":"344. 反转字符串","level":"1.5.1","depth":2,"path":"string/344-反转字符串.md","ref":"string/344-反转字符串.md","articles":[]},{"title":"541. 反转字符串 II","level":"1.5.2","depth":2,"path":"string/541-反转字符串II.md","ref":"string/541-反转字符串II.md","articles":[]},{"title":"剑指 Offer 05. 替换空格","level":"1.5.3","depth":2,"path":"string/541-反转字符串II.md","ref":"string/541-反转字符串II.md","articles":[]},{"title":"151. 颠倒字符串中的单词","level":"1.5.4","depth":2,"path":"string/151-颠倒字符串中的单词.md","ref":"string/151-颠倒字符串中的单词.md","articles":[]},{"title":"58 - II. 左旋转字符串","level":"1.5.5","depth":2,"path":"string/58-II左旋转字符串.md","ref":"string/58-II左旋转字符串.md","articles":[]},{"title":"28. 实现 strStr()","level":"1.5.6","depth":2,"path":"string/28-实现strStr(","ref":"string/28-实现strStr(","articles":[]},{"title":"459. 重复的子字符串","level":"1.5.7","depth":2,"path":"string/459-重复的子字符串.md","ref":"string/459-重复的子字符串.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"rosemary666","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ALGO","language":"zh-hans","links":{"sidebar":{"ALGO":"https://github.com/rosemary666/algo"}},"gitbook":"*","description":"golang版数据结构和leetcode"},"file":{"path":"string/344-反转字符串.md","mtime":"2022-08-30T12:35:19.583Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-30T12:35:47.050Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
