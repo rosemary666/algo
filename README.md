@@ -62,3 +62,10 @@ Leetcode部分主要参考了[代码随想录](https://programmercarl.com/), 然
 | 150. 逆波兰表达式求值| [leecode原题链接](https://leetcode.cn/evaluate-reverse-polish-notation/) | 中等 |[问题和讲解](./stacks-queues/150-逆波兰表达式求值.md) | [源码](./stacks-queues/code/150-evaluate-reverse-polish-notation/main.go) | 计算机运算思考方式，使用栈解决的经典问题 |&#9745; |
 | 239. 滑动窗口最大值| [leecode原题链接](https://leetcode.cn/sliding-window-maximum/) | 困难 |[问题和讲解](./stacks-queues/239-滑动窗口最大值.md) | [源码](./stacks-queues/code/239-sliding-window-maximum/main.go) | 单调队列的经典题目 |&#9745; |
 | 347. 前 K 个高频元素| [leecode原题链接](https://leetcode.cn/top-k-frequent-elements/) | 中等 |[问题和讲解](./stacks-queues/347-前K个高频元素.md) | [源码](./stacks-queues/code/347-top-k-frequent-elements/main.go) | 优先级队列 |&#9745; |
+
+### 二叉树
+| 题目 | 原题 | 难度 |问题和讲解 | 源码 | 关键词 | 已完成 |
+| :-----| ----: | ----: |:----: | :----: | :----: |:----: |
+| 144. 二叉树的前序遍历 | [leecode原题链接](https://leetcode.cn/problems/binary-tree-preorder-traversal/) | 简单 |[问题和讲解](./tree/144-二叉树的前序遍历.md) | [源码](./tree/code/144-binary-tree-preorder-traversal/main.go) | 前序遍历(递归法) |&#9745; |
+| 145. 二叉树的后序遍历 | [leecode原题链接](https://leetcode.cn/problems/binary-tree-postorder-traversal/) | 简单 |[问题和讲解](./tree/145-二叉树的后序遍历.md) | [源码](./tree/code/145-binary-tree-postorder-traversal/main.go) | 后序遍历(递归法) |&#9745; |
+| 94. 二叉树的中序遍历 | [leecode原题链接](https://leetcode.cn/problems/binary-tree-inorder-traversal/) | 简单 |[问题和讲解](./tree/94-二叉树的中序遍历.md) | [源码](./tree/code/94-binary-tree-inorder-traversal/main.go) | 后序遍历(递归法) |&#9745; |
