@@ -1,6 +1,95 @@
 {
     "title": "ALGO",
     "author": "rosemary666",
-    "description": "golang版的数据结果和leetcode",
-    "language": "zh"
+    "description": "golang版数据结构和leetcode",
+    "language": "zh-hans",
+    "structure": {
+        "readme": "README.md"
+    },
+    "links": {
+        "sidebar": {
+            "ALGO": "https://github.com/rosemary666/algo"
+        }
+    },
+    "plugins": [
+        "-sharing",
+        "splitter",
+        "expandable-chapters-small",
+        "anchors",
+        "github",
+        "github-buttons",
+        "donate",
+        "sharing-plus",
+        "anchor-navigation-ex",
+        "mathjax",
+        "mermaid-gb3",
+        "tbfed-pagefooter",
+        "code",
+        "search-plus", "-lunr", "-search",
+        "lightbox",
+        "theme-comscore",
+        "valine",
+        "pageview-count",
+        "favicon-absolute",
+        "copyright-v"
+    ],
+    "pluginsConfig": {
+        "theme-default": {
+            "showLevel": true
+        },
+        "github": {
+            "url": "https://github.com/rosemary666/algo"
+        },
+        "tbfed-pagefooter": {
+            "copyright": "Copyright © rosemary666 2022",
+            "modify_label": "该文件修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "github-buttons": {
+            "buttons": [{
+                "user": "narutohyc",
+                "repo": "bk_index",
+                "type": "star",
+                "size": "small",
+                "count": true
+            }]
+        },
+        "sharing": {
+            "douban": true,
+            "facebook": true,
+            "google": true,
+            "hatenaBookmark": false,
+            "instapaper": false,
+            "line": false,
+            "linkedin": false,
+            "messenger": false,
+            "pocket": false,
+            "qq": true,
+            "qzone": true,
+            "stumbleupon": false,
+            "twitter": true,
+            "viber": false,
+            "vk": false,
+            "weibo": true,
+            "whatsapp": false,
+            "all": [
+                "google", "facebook", "weibo", "twitter",
+                "qq", "qzone", "linkedin", "pocket"
+            ]
+        },
+        "anchor-navigation-ex": {
+            "showLevel": false
+        },
+        "fontSettings": {
+            "family": "msyh",
+            "size": 2
+        },
+        "copyright-v": {
+            "site": "https://github.com/rosemary666/algo",
+            "author": "rosemary666",
+            "website": "ALGO",
+            "copyProtect": true,
+            "enableFooter": false
+        }
+    }
 }
