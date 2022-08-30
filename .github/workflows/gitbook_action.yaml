@@ -14,3 +14,9 @@ jobs:
         with: #    or fork this repo and use YourName/gitbook-action@master
           token: ${{ secrets.GITBOOK }} # -> remember add this in settings/secrets as following
           source_branch: main
+          gitbook_pdf: true
+          gitbook_pdf_name: ALGO
+          gitbook_epub: true
+          gitbook_epub_name: ALGO
+          gitbook_mobi: true
+          gitbook_mobi_name: ALGO
