@@ -52,7 +52,7 @@ Leetcode部分主要参考了[代码随想录](https://programmercarl.com/), 然
 | 剑指 Offer 05. 替换空格 | [leecode原题链接](https://leetcode.cn/ti-huan-kong-ge-lcof/) | 简单 |[问题和讲解](./string/541-反转字符串II.md) | [源码](./string/code/05-ti-huan-kong-ge-lcof/main.go) | |&#9745; |
 | 151. 颠倒字符串中的单词 | [leecode原题链接](https://leetcode.cn/reverse-words-in-a-string/) | 中等 |[问题和讲解](./string/151-颠倒字符串中的单词.md) | [源码](./string/code/151-reverse-words-in-a-string/main.go) | |&#9745; |
 | 58 - II. 左旋转字符串 | [leecode原题链接](https://leetcode.cn/zuo-xuan-zhuan-zi-fu-chuan-lcof/) | 简单 |[问题和讲解](./string/58-II左旋转字符串.md) | [源码](./string/code/58-zuo-xuan-zhuan-zi-fu-chuan-lcof/main.go) | 花式反转 |&#9745; |
-| 28. 实现 strStr() | [leecode原题链接](https://leetcode.cn/implement-strstr/) | 简单 |[问题和讲解](./string/28-实现strStr().md) | [源码](./string/code/28-implement-strstr/main.go) | KMP算法 |&#9745; |
+| 28. 实现 strStr | [leecode原题链接](https://leetcode.cn/implement-strstr/) | 简单 |[问题和讲解](./string/28-实现strStr.md) | [源码](./string/code/28-implement-strstr/main.go) | KMP算法 |&#9745; |
 | 459. 重复的子字符串 | [leecode原题链接](https://leetcode.cn/repeated-substring-pattern/) | 简单 |[问题和讲解](./string/459-重复的子字符串.md) | [源码](./string/code/459-repeated-substring-pattern/main.go) | KMP算法 |&#9745; |
 
 ### 栈和队列

@@ -30,7 +30,7 @@
   * [剑指 Offer 05. 替换空格](string/541-反转字符串II.md)
   * [151. 颠倒字符串中的单词](string/151-颠倒字符串中的单词.md)
   * [58 - II. 左旋转字符串](string/58-II左旋转字符串.md)
-  * [28. 实现 strStr()](string/28-实现strStr().md)
+  * [28. 实现 strStr](string/28-实现strStr.md)
   * [459. 重复的子字符串](string/459-重复的子字符串.md)
 * [栈和队列](stacks-queues/README.md)
   * [232. 用栈实现队列](stacks-queues/232-用栈实现队列.md)
