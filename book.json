@@ -5,7 +5,7 @@
     "description": "golang版数据结构和leetcode",
     "language": "zh-hans",
     "structure": {
-        "readme": "gitbook_readme.md"
+        "readme": "GITBOOK.md"
     },
     "links": {
         "sidebar": {

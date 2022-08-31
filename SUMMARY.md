@@ -1,6 +1,6 @@
 # Summary
 
-* [介绍](README.md)
+* [介绍](GITBOOK.md)
 * [数组](array/README.md)
   * [704. 二分查找](array/704-二分查找.md)
   * [27. 移除元素](array/27-移除元素.md)

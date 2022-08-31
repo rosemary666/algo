@@ -20,3 +20,4 @@ jobs:
           gitbook_epub_name: ALGO
           gitbook_mobi: true
           gitbook_mobi_name: ALGO
+          font_install: sudo apt-get install fonts-noto-cjkorsudo apt-get install ttf-mscorefonts-installer
