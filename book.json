@@ -19,15 +19,10 @@
         "-lunr",
         "-search",
         "search-pro",
-        "insert-logo",
         "pageview-count",
         "tbfed-pagefooter"
     ],
     "pluginsConfig": {
-        "insert-logo": {
-            "url": "images/logo.png",
-            "style": "background: none; max-height: 30px; min-height: 30px"
-        },
         "tbfed-pagefooter": {
             "copyright": "Copyright &copy ROSEMARY666 2022",
             "modify_label": "该文章修订时间：",
