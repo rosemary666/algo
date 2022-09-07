@@ -24,24 +24,6 @@ func traversal(cur_node *TreeNode, arr *[]int) {
 	*arr = append(*arr, cur_node.Val)
 }
 
-// 构建二叉树
-func buildTree(root *TreeNode, arr []int, i int) {
-	if i > len(arr)-1 || len(arr) == 0 {
-		return
-	}
-	root.Val = arr[i]
-	i++
-	if i <= len(arr)-1 && arr[i] != -1000 {
-		root.Left = &TreeNode{}
-		buildTree(root.Left, arr, i)
-	}
-	i++
-	if i <= len(arr)-1 && arr[i] != -1000 {
-		root.Right = &TreeNode{}
-		buildTree(root.Right, arr, i)
-	}
-}
-
 // 用数据实现一个基本功能的栈
 type Stack struct {
 	elements []*TreeNode
@@ -106,23 +88,21 @@ func postorderTraversalV1(root *TreeNode) []int {
 }
 
 func main() {
-	// -1000代表空值
 	println("UseCase 1......")
-	root := &TreeNode{}
-	buildTree(root, []int{1, -1000, 2, 3}, 0)
-
+	root := &TreeNode{Val: 1}
+	node1 := &TreeNode{Val: 2}
+	node2 := &TreeNode{Val: 3}
+	root.Right = node1
+	node1.Left = node2
 	fmt.Printf("%v\n", postorderTraversal(root))
 	fmt.Printf("%v\n", postorderTraversalV1(root))
 
 	println("UseCase 2......")
-	root = &TreeNode{}
-	buildTree(nil, []int{}, 0)
 	fmt.Printf("%v\n", postorderTraversal(nil))
 	fmt.Printf("%v\n", postorderTraversalV1(nil))
 
 	println("UseCase 3......")
-	root = &TreeNode{}
-	buildTree(root, []int{1}, 0)
+	root = &TreeNode{Val: 1}
 	fmt.Printf("%v\n", postorderTraversal(root))
 	fmt.Printf("%v\n", postorderTraversalV1(root))
 }
