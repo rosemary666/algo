@@ -74,3 +74,12 @@ Leetcode部分主要参考了[代码随想录](https://programmercarl.com/), 然
 | 94. 二叉树的中序遍历 | [leecode原题链接](https://leetcode.cn/problems/binary-tree-inorder-traversal/) | 简单 |[问题和讲解](./tree/94-二叉树的中序遍历.md) | [源码](./tree/code/94-binary-tree-inorder-traversal/main.go) | 后序遍历(递归法+迭代法(借助栈)) |&#9745; |
 | 102. 二叉树的层序遍历 | [leecode原题链接](https://leetcode.cn/problems/binary-tree-level-order-traversal/) | 中等 |[问题和讲解](./tree/102-二叉树的层序遍历.md) | [源码](./tree/code/102-binary-tree-level-order-traversal/main.go) | 层次遍历(借助队列) |&#9745; |
 | 226. 翻转二叉树 | [leecode原题链接](https://leetcode.cn/problems/invert-binary-tree/) | 简单 |[问题和讲解](./tree/226-翻转二叉树.md) | [源码](./tree/code/226-invert-binary-tree/main.go) | 可以是层次遍历的的变种实现 |&#9745; |
+| 101. 对称二叉树 | [leecode原题链接](https://leetcode.cn/problems/symmetric-tree/) | 简单 |[问题和讲解](./tree/101-对称二叉树.md) | [源码](./tree/code/101-symmetric-tree/main.go) | 递归和迭代  |&#9745; |
+| 104. 二叉树的最大深度 | [leecode原题链接](https://leetcode.cn/problems/maximum-depth-of-binary-tree/) | 简单 |[问题和讲解](./tree/104-二叉树的最大深度.md) | [源码](./tree/code/104-maximum-depth-of-binary-tree/main.go) | 层序遍历的用法  |&#9745; |
+| 111. 二叉树的最小深度 | [leecode原题链接](https://leetcode.cn/problems/minimum-depth-of-binary-tree/) | 简单 |[问题和讲解](./tree/111-二叉树的最小深度.md) | [源码](./tree/code/111-minimum-depth-of-binary-tree/main.go) | 层序遍历的用法  |&#9745; |
+| 222. 完全二叉树的节点个数 | [leecode原题链接](https://leetcode.cn/problems/count-complete-tree-nodes/) | 中等 |[问题和讲解](./tree/222-完全二叉树的节点个数.md) | [源码](./tree/code/222-count-complete-tree-nodes/main.go) |  层次遍历 |&#9745; |
+| 110. 平衡二叉树 | [leecode原题链接](https://leetcode.cn/problems/balanced-binary-tree/) | 简单 |[问题和讲解](./tree/110-平衡二叉树.md) | [源码](./tree/code/110-balanced-binary-tree/main.go) |  递归 |&#9745; |
+| 257. 二叉树的所有路径 | [leecode原题链接](https://leetcode.cn/problems/binary-tree-paths/) | 简单 |[问题和讲解](./tree/257-二叉树的所有路径.md) | [源码](./tree/code/257-binary-tree-paths/main.go) |  递归和回溯 |&#9745; |
+| 404. 左叶子之和 | [leecode原题链接](https://leetcode.cn/problems/sum-of-left-leaves/) | 简单 |[问题和讲解](./tree/404-左叶子之和.md) | [源码](./tree/code/404-sum-of-left-leaves/main.go) |  前序遍历变种 |&#9745; |
+| 513. 找树左下角的值 | [leecode原题链接](https://leetcode.cn/problems/find-bottom-left-tree-value/) | 中等 |[问题和讲解](./tree/513-找树左下角的值.md) | [源码](./tree/code/513-find-bottom-left-tree-value/main.go) | 层次遍历的应用  |&#9745; |
+| 112. 路径总和 | [leecode原题链接](https://leetcode.cn/problems/path-sum/) | 简单 |[问题和讲解](./tree/112-路径总和.md) | [源码](./tree/code/112-path-sum/main.go) | 跟257这题思路类似  |&#9745; |

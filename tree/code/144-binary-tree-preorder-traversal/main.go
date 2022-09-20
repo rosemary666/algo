@@ -83,7 +83,6 @@ func preorderTraversalV1(root *TreeNode) []int {
 }
 
 func main() {
-	// -1000代表空值
 	println("UseCase 1......")
 	root := &TreeNode{Val: 1}
 	node1 := &TreeNode{Val: 2}
