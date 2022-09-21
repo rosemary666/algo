@@ -83,3 +83,7 @@ Leetcode部分主要参考了[代码随想录](https://programmercarl.com/), 然
 | 404. 左叶子之和 | [leecode原题链接](https://leetcode.cn/problems/sum-of-left-leaves/) | 简单 |[问题和讲解](./tree/404-左叶子之和.md) | [源码](./tree/code/404-sum-of-left-leaves/main.go) |  前序遍历变种 |&#9745; |
 | 513. 找树左下角的值 | [leecode原题链接](https://leetcode.cn/problems/find-bottom-left-tree-value/) | 中等 |[问题和讲解](./tree/513-找树左下角的值.md) | [源码](./tree/code/513-find-bottom-left-tree-value/main.go) | 层次遍历的应用  |&#9745; |
 | 112. 路径总和 | [leecode原题链接](https://leetcode.cn/problems/path-sum/) | 简单 |[问题和讲解](./tree/112-路径总和.md) | [源码](./tree/code/112-path-sum/main.go) | 跟257这题思路类似  |&#9745; |
+| 106. 从中序与后序遍历序列构造二叉树 | [leecode原题链接](https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | 中等 |[问题和讲解](./tree/106-从中序与后序遍历序列构造二叉树.md) | [源码](./tree/code/106-construct-binary-tree-from-inorder-and-postorder-traversal/main.go) | 典型的从遍历反向构造二叉树   |&#9745; |
+| 654. 最大二叉树 | [leecode原题链接](https://leetcode.cn/problems/maximum-binary-tree/) | 中等 |[问题和讲解](./tree/654-最大二叉树.md) | [源码](./tree/code/654-maximum-binary-tree/main.go) | 递归  |&#9745; |
+| 617. 合并二叉树 | [leecode原题链接](https://leetcode.cn/problems/merge-two-binary-trees/) | 简单 |[问题和讲解](./tree/617-合并二叉树.md) | [源码](./tree/code/617-merge-two-binary-trees/main.go) | 两棵子树同时前序遍历  |&#9745; |
+| 700. 二叉搜索树中的搜索 | [leecode原题链接](https://leetcode.cn/problems/search-in-a-binary-search-tree/) | 简单 |[问题和讲解](./tree/700-二叉搜索树中的搜索.md) | [源码](./tree/code/700-search-in-a-binary-search-tree/main.go) |   |&#9745; |
