@@ -100,4 +100,7 @@ Leetcode部分主要参考了[代码随想录](https://programmercarl.com/), 然
 ### 回溯算法
 | 题目 | 原题 | 难度 |问题和讲解 | 源码 | 关键词 | 已完成 |
 | :-----| ----: | ----: |:----: | :----: | :----: |:----: |
-| 77. 组合 | [leecode原题链接](https://leetcode.cn/problems/combinations/) | 中等 |[问题和讲解](./backtracking/77-组合.md) | [源码](./backtracking/code/77-combinations/main.go) |  |&#9745; |
+| 77. 组合 | [leecode原题链接](https://leetcode.cn/problems/combinations/) | 中等 |[问题和讲解](./backtracking/77-组合.md) | [源码](./backtracking/code/77-combinations/main.go) | 组合类回溯算法  |&#9745; |
+| 216. 组合总和 III | [leecode原题链接](https://leetcode.cn/problems/combination-sum-iii/) | 中等 |[问题和讲解](./backtracking/216-组合总和III.md) | [源码](./backtracking/code/216-combination-sum-iii/main.go) | 组合类回溯算法  |&#9745; |
+| 17. 电话号码的字母组合 | [leecode原题链接](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/) | 中等 |[问题和讲解](./backtracking/17-电话号码的字母组合.md) | [源码](./backtracking/code/17-letter-combinations-of-a-phone-number/main.go) | 组合类回溯算法  |&#9745; |
+| 39. 组合总和 | [leecode原题链接](https://leetcode.cn/problems/combination-sum/) | 中等 |[问题和讲解](./backtracking/39-组合总和.md) | [源码](./backtracking/code/39-combination-sum/main.go) | 组合类回溯算法  |&#9745; |

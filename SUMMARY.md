@@ -70,3 +70,6 @@
   * [538. 把二叉搜索树转换为累加树](tree/538-把二叉搜索树转换为累加树.md)
 * [回溯算法](backtracking/README.md)
   * [77. 组合](backtracking/77-组合.md)
+  * [216. 组合总和III](backtracking/216-组合总和III.md)
+  * [17. 电话号码的字母组合](backtracking/17-电话号码的字母组合.md)
+  * [39. 组合总和](backtracking/39-组合总和.md)
