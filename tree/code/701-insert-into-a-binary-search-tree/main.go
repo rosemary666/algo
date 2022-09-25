@@ -8,24 +8,19 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
-func searchBST(root *TreeNode, val int) *TreeNode {
+func insertIntoBST(root *TreeNode, val int) *TreeNode {
 	if root == nil {
-		return nil
-	}
-	// 找到目标树
-	if root.Val == val {
+		root = &TreeNode{
+			Val: val,
+		}
 		return root
 	}
-
-	// 左子树非空，并且左子树根节点大于目标值(左子树值均小于根节点值)
-	if root.Left != nil && root.Val > val {
-		return searchBST(root.Left, val)
+	if val < root.Val {
+		root.Left = insertIntoBST(root.Left, val)
+	} else if val > root.Val {
+		root.Right = insertIntoBST(root.Right, val)
 	}
-	// 右子树非空，并且右子树根节点小于于目标值(右子树值均大于根节点值)
-	if root.Right != nil && root.Val < val {
-		return searchBST(root.Right, val)
-	}
-	return nil
+	return root
 }
 
 // 递归遍历
@@ -56,18 +51,22 @@ func main() {
 	root.Right = node2
 	node1.Left = node3
 	node1.Right = node4
-	fmt.Printf("%+v\n", preorderTraversal(searchBST(root, 2)))
+	fmt.Printf("%+v\n", preorderTraversal(insertIntoBST(root, 5)))
 
 	println("UseCase 2......")
-	root = &TreeNode{Val: 4}
-	node1 = &TreeNode{Val: 2}
-	node2 = &TreeNode{Val: 7}
-	node3 = &TreeNode{Val: 1}
-	node4 = &TreeNode{Val: 3}
+	root = &TreeNode{Val: 40}
+	node1 = &TreeNode{Val: 20}
+	node2 = &TreeNode{Val: 60}
+	node3 = &TreeNode{Val: 10}
+	node4 = &TreeNode{Val: 30}
+	node5 := &TreeNode{Val: 50}
+	node6 := &TreeNode{Val: 70}
 	root.Left = node1
 	root.Right = node2
 	node1.Left = node3
+	node1.Left = node3
 	node1.Right = node4
-	fmt.Printf("%+v\n", preorderTraversal(searchBST(root, 5)))
-	return
+	node2.Left = node5
+	node2.Right = node6
+	fmt.Printf("%+v\n", preorderTraversal(insertIntoBST(root, 25)))
 }

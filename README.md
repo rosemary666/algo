@@ -86,4 +86,18 @@ Leetcode部分主要参考了[代码随想录](https://programmercarl.com/), 然
 | 106. 从中序与后序遍历序列构造二叉树 | [leecode原题链接](https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | 中等 |[问题和讲解](./tree/106-从中序与后序遍历序列构造二叉树.md) | [源码](./tree/code/106-construct-binary-tree-from-inorder-and-postorder-traversal/main.go) | 典型的从遍历反向构造二叉树   |&#9745; |
 | 654. 最大二叉树 | [leecode原题链接](https://leetcode.cn/problems/maximum-binary-tree/) | 中等 |[问题和讲解](./tree/654-最大二叉树.md) | [源码](./tree/code/654-maximum-binary-tree/main.go) | 递归  |&#9745; |
 | 617. 合并二叉树 | [leecode原题链接](https://leetcode.cn/problems/merge-two-binary-trees/) | 简单 |[问题和讲解](./tree/617-合并二叉树.md) | [源码](./tree/code/617-merge-two-binary-trees/main.go) | 两棵子树同时前序遍历  |&#9745; |
-| 700. 二叉搜索树中的搜索 | [leecode原题链接](https://leetcode.cn/problems/search-in-a-binary-search-tree/) | 简单 |[问题和讲解](./tree/700-二叉搜索树中的搜索.md) | [源码](./tree/code/700-search-in-a-binary-search-tree/main.go) |   |&#9745; |
+| 700. 二叉搜索树中的搜索 | [leecode原题链接](https://leetcode.cn/problems/search-in-a-binary-search-tree/) | 简单 |[问题和讲解](./tree/700-二叉搜索树中的搜索.md) | [源码](./tree/code/700-search-in-a-binary-search-tree/main.go) | 二叉搜索树特性  |&#9745; |
+| 98. 验证二叉搜索树 | [leecode原题链接](https://leetcode.cn/problems/validate-binary-search-tree/) | 中等 |[问题和讲解](./tree/98-验证二叉搜索树.md) | [源码](./tree/code/98-validate-binary-search-tree/main.go) | 二叉搜索树特性  |&#9745; |
+| 530. 二叉搜索树的最小绝对差 | [leecode原题链接](https://leetcode.cn/problems/minimum-absolute-difference-in-bst/) | 简单 |[问题和讲解](./tree/530-二叉搜索树的最小绝对差.md) | [源码](./tree/code/530-minimum-absolute-difference-in-bst/main.go) | 二叉搜索树特性和中序遍历的结合(形成有序数组)  |&#9745; |
+| 501. 二叉搜索树中的众数 | [leecode原题链接](https://leetcode.cn/problems/find-mode-in-binary-search-tree/) | 简单 |[问题和讲解](./tree/501-二叉搜索树中的众数.md) | [源码](./tree/code/501-find-mode-in-binary-search-tree/main.go) | 二叉搜索树特性和中序遍历的结合(进阶: 一次遍历中解决)  |&#9745; |
+| 236. 二叉树的最近公共祖先 | [leecode原题链接](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/) | 简单 |[问题和讲解](./tree/236-二叉树的最近公共祖先.md) | [源码](./tree/code/236-lowest-common-ancestor-of-a-binary-tree/main.go) | 递归   |&#9745; |
+| 701. 二叉搜索树中的插入操作 | [leecode原题链接](https://leetcode.cn/problems/insert-into-a-binary-search-tree/) | 中等 |[问题和讲解](./tree/701-二叉搜索树中的插入操作.md) | [源码](./tree/code/701-insert-into-a-binary-search-tree/main.go) | 二叉树特性 |&#9745; |
+| 450. 删除二叉搜索树中的节点 | [leecode原题链接](https://leetcode.cn/problems/delete-node-in-a-bst/) | 中等 |[问题和讲解](./tree/450-删除二叉搜索树中的节点.md) | [源码](./tree/code/450-delete-node-in-a-bst/main.go) | 二叉搜索树特性利用  |&#9745; |
+| 669. 修剪二叉搜索树 | [leecode原题链接](https://leetcode.cn/problems/trim-a-binary-search-tree/) | 中等 |[问题和讲解](./tree/669-修剪二叉搜索树.md) | [源码](./tree/code/669-trim-a-binary-search-tree/main.go) | 二叉搜索树特性利用  |&#9745; |
+| 108. 将有序数组转换为二叉搜索树 | [leecode原题链接](https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/) | 简单 |[问题和讲解](./tree/108-将有序数组转换为二叉搜索树.md) | [源码](./tree/code/108-convert-sorted-array-to-binary-search-tree/main.go) | 结合二分法的思想使用  |&#9745; |
+| 538. 把二叉搜索树转换为累加树 | [leecode原题链接](https://leetcode.cn/problems/convert-bst-to-greater-tree/) | 中等 |[问题和讲解](./tree/538-把二叉搜索树转换为累加树.md) | [源码](./tree/code/538-convert-bst-to-greater-tree/main.go) | 二叉树的反中序遍历  |&#9745; |
+
+### 回溯算法
+| 题目 | 原题 | 难度 |问题和讲解 | 源码 | 关键词 | 已完成 |
+| :-----| ----: | ----: |:----: | :----: | :----: |:----: |
+| 77. 组合 | [leecode原题链接](https://leetcode.cn/problems/combinations/) | 中等 |[问题和讲解](./backtracking/77-组合.md) | [源码](./backtracking/code/77-combinations/main.go) |  |&#9745; |
