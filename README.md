@@ -104,3 +104,9 @@ Leetcode部分主要参考了[代码随想录](https://programmercarl.com/), 然
 | 216. 组合总和 III | [leecode原题链接](https://leetcode.cn/problems/combination-sum-iii/) | 中等 |[问题和讲解](./backtracking/216-组合总和III.md) | [源码](./backtracking/code/216-combination-sum-iii/main.go) | 组合类回溯算法  |&#9745; |
 | 17. 电话号码的字母组合 | [leecode原题链接](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/) | 中等 |[问题和讲解](./backtracking/17-电话号码的字母组合.md) | [源码](./backtracking/code/17-letter-combinations-of-a-phone-number/main.go) | 组合类回溯算法  |&#9745; |
 | 39. 组合总和 | [leecode原题链接](https://leetcode.cn/problems/combination-sum/) | 中等 |[问题和讲解](./backtracking/39-组合总和.md) | [源码](./backtracking/code/39-combination-sum/main.go) | 组合类回溯算法  |&#9745; |
+| 40. 组合总和 II | [leecode原题链接](https://leetcode.cn/problems/combination-sum-ii/) | 中等 |[问题和讲解](./backtracking/40-组合总和II.md) | [源码](./backtracking/code/40-combination-sum-ii/main.go) | 组合类回溯算法（去重）  |&#9745; |
+| 131. 分割回文串 | [leecode原题链接](https://leetcode.cn/problems/palindrome-partitioning/) | 中等 |[问题和讲解](./backtracking/131-分割回文串.md) | [源码](./backtracking/code/131-palindrome-partitioning/main.go) | 分割问题  |&#9745; |
+| 93. 复原 IP 地址 | [leecode原题链接](https://leetcode.cn/problems/restore-ip-addresses/) | 中等 |[问题和讲解](./backtracking/93-复原IP地址.md) | [源码](./backtracking/code/93-restore-ip-addresses/main.go) | 分割问题  |&#9745; |
+| 78. 子集 | [leecode原题链接](https://leetcode.cn/problems/subsets/) | 中等 |[问题和讲解](./backtracking/78-子集.md) | [源码](./backtracking/code/78-subsets/main.go) | 子集问题  |&#9745; |
+| 90. 子集 II | [leecode原题链接](https://leetcode.cn/problems/subsets-ii/) | 中等 |[问题和讲解](./backtracking/90-子集II.md) | [源码](./backtracking/code/90-subsets-ii/main.go) | 子集问题  |&#9745; |
+| 491. 递增子序列 | [leecode原题链接](https://leetcode.cn/problems/increasing-subsequences/) | 中等 |[问题和讲解](./backtracking/491-递增子序列.md) | [源码](./backtracking/code/491-increasing-subsequences/main.go) | 子集问题  |&#9745; |
