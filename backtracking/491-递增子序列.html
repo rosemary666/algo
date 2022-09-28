@@ -77,6 +77,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="46-全排列.html" />
+    
     
     <link rel="prev" href="90-子集II.html" />
     
@@ -1193,6 +1195,71 @@
             
         </li>
     
+        <li class="chapter " data-level="1.9.11" data-path="46-全排列.html">
+            
+                <a href="46-全排列.html">
+            
+                    
+                    46. 全排列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.12" data-path="47-全排列II.html">
+            
+                <a href="47-全排列II.html">
+            
+                    
+                    47. 全排列II
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.13" data-path="332-重新安排行程.html">
+            
+                <a href="332-重新安排行程.html">
+            
+                    
+                    332. 重新安排行程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.14" data-path="51-N皇后.html">
+            
+                <a href="51-N皇后.html">
+            
+                    
+                    51. N 皇后
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.15" data-path="37-解数独.html">
+            
+                <a href="37-解数独.html">
+            
+                    
+                    37. 解数独
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -1264,13 +1331,47 @@
 </ul>
 <h2 id="&#x89E3;&#x9898;&#x601D;&#x8DEF;">&#x89E3;&#x9898;&#x601D;&#x8DEF;</h2>
 <h3 id="&#x601D;&#x8DEF;">&#x601D;&#x8DEF;</h3>
+<p>&#x672C;&#x9898;&#x6C42;&#x81EA;&#x589E;&#x5B50;&#x5E8F;&#x5217;&#xFF0C;<strong>&#x662F;&#x4E0D;&#x80FD;&#x5BF9;&#x539F;&#x6570;&#x7EC4;&#x7ECF;&#x884C;&#x6392;&#x5E8F;&#x7684;</strong>&#xFF0C;&#x6392;&#x5B8C;&#x5E8F;&#x7684;&#x6570;&#x7EC4;&#x90FD;&#x662F;&#x81EA;&#x589E;&#x5B50;&#x5E8F;&#x5217;&#x4E86;&#x3002;<strong>&#x6240;&#x4EE5;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#x4E4B;&#x524D;&#x7684;&#x53BB;&#x91CD;&#x903B;&#x8F91;&#xFF01;</strong></p>
+<p>&#x672C;&#x9898;&#x7ED9;&#x51FA;&#x7684;&#x793A;&#x4F8B;&#xFF0C;&#x8FD8;&#x662F;&#x4E00;&#x4E2A;&#x6709;&#x5E8F;&#x6570;&#x7EC4; [4, 6, 7, 7]&#xFF0C;&#x8FD9;&#x66F4;&#x5BB9;&#x6613;&#x8BEF;&#x5BFC;&#x5927;&#x5BB6;&#x6309;&#x7167;&#x6392;&#x5E8F;&#x7684;&#x601D;&#x8DEF;&#x53BB;&#x505A;&#x4E86;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x6709;&#x9C9C;&#x660E;&#x7684;&#x5BF9;&#x6BD4;&#xFF0C;&#x6211;&#x7528;[4, 7, 6, 7]&#x8FD9;&#x4E2A;&#x6570;&#x7EC4;&#x6765;&#x4E3E;&#x4F8B;&#xFF0C;&#x62BD;&#x8C61;&#x4E3A;&#x6811;&#x5F62;&#x7ED3;&#x6784;&#x5982;&#x56FE;&#xFF1A;
+<img src="images/491-solu.png" alt=""></p>
 <h2 id="&#x5B9E;&#x73B0;">&#x5B9E;&#x73B0;</h2>
-<p><a href="code">&#x6E90;&#x7801;</a></p>
-<pre><code class="lang-go">
+<p><a href="code/491-increasing-subsequences/main.go">&#x6E90;&#x7801;</a></p>
+<pre><code class="lang-go"><span class="hljs-keyword">var</span> (
+    res  = <span class="hljs-built_in">make</span>([][]<span class="hljs-keyword">int</span>, <span class="hljs-number">0</span>) <span class="hljs-comment">// &#x5B58;&#x653E;&#x6700;&#x7EC8;&#x7ED3;&#x679C;</span>
+    path = <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">int</span>, <span class="hljs-number">0</span>)   <span class="hljs-comment">// &#x5B58;&#x653E;&#x4E2D;&#x95F4;&#x4E34;&#x65F6;&#x7ED3;&#x679C;</span>
+)
 
+<span class="hljs-keyword">func</span> backtracking(nums []<span class="hljs-keyword">int</span>, startIndex <span class="hljs-keyword">int</span>) {
+    <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(path) &gt; <span class="hljs-number">1</span> {
+        temp := <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">int</span>, <span class="hljs-built_in">len</span>(path))
+        <span class="hljs-built_in">copy</span>(temp, path)
+        res = <span class="hljs-built_in">append</span>(res, temp)
+    }
+    set := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">map</span>[<span class="hljs-keyword">int</span>]<span class="hljs-keyword">int</span>, <span class="hljs-number">0</span>) <span class="hljs-comment">// &#x8BB0;&#x5F55;&#x8BE5;&#x5C42;&#x6570;&#x503C;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x88AB;&#x4F7F;&#x7528;&#x8FC7;</span>
+    <span class="hljs-keyword">for</span> i := startIndex; i &lt; <span class="hljs-built_in">len</span>(nums); i++ {
+        <span class="hljs-comment">//&#x5206;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#x5224;&#x65AD;&#xFF1A;</span>
+        <span class="hljs-comment">//&#x4E00;&#xFF0C;&#x5F53;&#x524D;&#x53D6;&#x7684;&#x5143;&#x7D20;&#x5C0F;&#x4E8E;&#x5B50;&#x96C6;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x5219;&#x7EE7;&#x7EED;&#x5BFB;&#x627E;&#x4E0B;&#x4E00;&#x4E2A;&#x9002;&#x5408;&#x7684;&#x5143;&#x7D20;</span>
+        <span class="hljs-comment">//&#x6216;&#x8005;&#x4E8C;&#xFF0C;&#x5F53;&#x524D;&#x53D6;&#x7684;&#x5143;&#x7D20;&#x5728;&#x672C;&#x5C42;&#x5DF2;&#x7ECF;&#x51FA;&#x73B0;&#x8FC7;&#x4E86;&#xFF0C;&#x6240;&#x4EE5;&#x8DF3;&#x8FC7;&#x8BE5;&#x5143;&#x7D20;&#xFF0C;&#x7EE7;&#x7EED;&#x5BFB;&#x627E;</span>
+        <span class="hljs-keyword">if</span> (<span class="hljs-built_in">len</span>(path) &gt; <span class="hljs-number">0</span> &amp;&amp; nums[i] &lt; path[<span class="hljs-built_in">len</span>(path)<span class="hljs-number">-1</span>]) || (set[nums[i]] == <span class="hljs-number">1</span>) {
+            <span class="hljs-keyword">continue</span>
+        }
+        path = <span class="hljs-built_in">append</span>(path, nums[i])
+        set[nums[i]] = <span class="hljs-number">1</span>
+        backtracking(nums, i+<span class="hljs-number">1</span>)
+        path = path[:<span class="hljs-built_in">len</span>(path)<span class="hljs-number">-1</span>]
+    }
+}
+
+<span class="hljs-keyword">func</span> findSubsequences(nums []<span class="hljs-keyword">int</span>) [][]<span class="hljs-keyword">int</span> {
+    res = <span class="hljs-built_in">make</span>([][]<span class="hljs-keyword">int</span>, <span class="hljs-number">0</span>) <span class="hljs-comment">// &#x5B58;&#x653E;&#x6700;&#x7EC8;&#x7ED3;&#x679C;</span>
+    path = <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">int</span>, <span class="hljs-number">0</span>)  <span class="hljs-comment">// &#x5B58;&#x653E;&#x4E2D;&#x95F4;&#x4E34;&#x65F6;&#x7ED3;&#x679C;</span>
+    backtracking(nums, <span class="hljs-number">0</span>)
+    <span class="hljs-keyword">return</span> res
+}
 </code></pre>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; ROSEMARY666 2022 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2022-09-26 14:45:24
+2022-09-28 15:55:21
 </span></footer>
                                 
                                 </section>
@@ -1298,10 +1399,14 @@
 
             
                 
-                <a href="90-子集II.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 90. 子集 II">
+                <a href="90-子集II.html" class="navigation navigation-prev " aria-label="Previous page: 90. 子集 II">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="46-全排列.html" class="navigation navigation-next " aria-label="Next page: 46. 全排列">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -1310,7 +1415,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"491. 递增子序列","level":"1.9.10","depth":2,"previous":{"title":"90. 子集 II","level":"1.9.9","depth":2,"path":"backtracking/90-子集II.md","ref":"backtracking/90-子集II.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","code","splitter","-lunr","-search","search-pro","pageview-count","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy ROSEMARY666 2022","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"pageview-count":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"rosemary666","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"GITBOOK.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ALGO","language":"zh-hans","links":{"sidebar":{"ALGO":"https://github.com/rosemary666/algo"}},"gitbook":">=3.2.0","description":"golang版数据结构和leetcode"},"file":{"path":"backtracking/491-递增子序列.md","mtime":"2022-09-26T14:45:24.919Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-26T14:46:04.252Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"491. 递增子序列","level":"1.9.10","depth":2,"next":{"title":"46. 全排列","level":"1.9.11","depth":2,"path":"backtracking/46-全排列.md","ref":"backtracking/46-全排列.md","articles":[]},"previous":{"title":"90. 子集 II","level":"1.9.9","depth":2,"path":"backtracking/90-子集II.md","ref":"backtracking/90-子集II.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","code","splitter","-lunr","-search","search-pro","pageview-count","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy ROSEMARY666 2022","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"pageview-count":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"rosemary666","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"GITBOOK.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ALGO","language":"zh-hans","links":{"sidebar":{"ALGO":"https://github.com/rosemary666/algo"}},"gitbook":">=3.2.0","description":"golang版数据结构和leetcode"},"file":{"path":"backtracking/491-递增子序列.md","mtime":"2022-09-28T15:55:21.082Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-28T15:56:02.106Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
