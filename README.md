@@ -109,4 +109,9 @@ Leetcode部分主要参考了[代码随想录](https://programmercarl.com/), 然
 | 93. 复原 IP 地址 | [leecode原题链接](https://leetcode.cn/problems/restore-ip-addresses/) | 中等 |[问题和讲解](./backtracking/93-复原IP地址.md) | [源码](./backtracking/code/93-restore-ip-addresses/main.go) | 分割问题  |&#9745; |
 | 78. 子集 | [leecode原题链接](https://leetcode.cn/problems/subsets/) | 中等 |[问题和讲解](./backtracking/78-子集.md) | [源码](./backtracking/code/78-subsets/main.go) | 子集问题  |&#9745; |
 | 90. 子集 II | [leecode原题链接](https://leetcode.cn/problems/subsets-ii/) | 中等 |[问题和讲解](./backtracking/90-子集II.md) | [源码](./backtracking/code/90-subsets-ii/main.go) | 子集问题  |&#9745; |
-| 491. 递增子序列 | [leecode原题链接](https://leetcode.cn/problems/increasing-subsequences/) | 中等 |[问题和讲解](./backtracking/491-递增子序列.md) | [源码](./backtracking/code/491-increasing-subsequences/main.go) | 子集问题  |&#9745; |
+| 491. 递增子序列 | [leecode原题链接](https://leetcode.cn/problems/increasing-subsequences/) | 中等 |[问题和讲解](./backtracking/491-递增子序列.md) | [源码](./backtracking/code/491-increasing-subsequences/main.go) | 像子集问题  |&#9745; |
+| 46. 全排列 | [leecode原题链接](https://leetcode.cn/problems/permutations/) | 中等 |[问题和讲解](./backtracking/46-全排列.md) | [源码](./backtracking/code/46-permutations/main.go) | 像子集问题   |&#9745; |
+| 47. 全排列 II | [leecode原题链接](https://leetcode.cn/problems/permutations-ii/) | 中等 |[问题和讲解](./backtracking/47-全排列II.md) | [源码](./backtracking/code/47-permutations-ii/main.go) | 像子集问题（去重）   |&#9745; |
+| 332. 重新安排行程 | [leecode原题链接](https://leetcode.cn/problems/reconstruct-itinerary/) | 困难 |[问题和讲解](./backtracking/332-重新安排行程.md) | [源码](./backtracking/code/332-reconstruct-itinerary/main.go) |    |&#9745; |
+| 51. N 皇后 | [leecode原题链接](https://leetcode.cn/problems/n-queens/) | 困难 |[问题和讲解](./backtracking/51-N皇后.md) | [源码](./backtracking/code/51-n-queens/main.go) |    |&#9745; |
+| 37. 解数独| [leecode原题链接](https://leetcode.cn/problems/sudoku-solver/) | 困难 |[问题和讲解](./backtracking/37-解数独.md) | [源码](./backtracking/code/37-sudoku-solver/main.go) |    |&#9745; |

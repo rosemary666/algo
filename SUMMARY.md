@@ -79,3 +79,8 @@
   * [78. 子集](backtracking/78-子集.md)
   * [90. 子集 II](backtracking/90-子集II.md)
   * [491. 递增子序列](backtracking/491-递增子序列.md)
+  * [46. 全排列](backtracking/46-全排列.md)
+  * [47. 全排列II](backtracking/47-全排列II.md)
+  * [332. 重新安排行程](backtracking/332-重新安排行程.md)
+  * [51. N 皇后](backtracking/51-N皇后.md)
+  * [37. 解数独](backtracking/37-解数独.md)
